@@ -1,0 +1,186 @@
+/* styles.css */
+body { 
+	font-family: Flamenco    ; 
+	margin: 0; 
+	padding: 0; 
+	background-color: #000; 
+    overflow: hidden;
+} 
+
+header { 
+	width: 100%; 
+	background-color: #333; 
+	color: #FFD700; 
+	text-align: center; 
+	padding: 10px; 
+} 
+
+main { 
+	max-width: 600px; 
+	margin: 0 auto; 
+	padding: 20px; 
+    background-color: #000;
+} 
+
+.bookmark-form { 
+	display: flex; 
+	margin-bottom: 10px; 
+} 
+
+input[type="url"] { 
+	flex: 1; 
+	padding: 10px; 
+    font-family: Flamenco;
+    font-size: 12px;
+} 
+
+button#addBookmark { 
+	background-color: #000; 
+	color: #fff; 
+	border: none; 
+	padding: 10px 20px; 
+	cursor: pointer; 
+	font-weight: 600; 
+	margin-left: 6px; 
+    font-family: Flamenco;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #FFD700;
+} 
+
+button#addBookmark:hover { 
+	background-color: #FFD700; 
+    box-shadow: 0 0 5px 0 #FFD700;
+    color: #000;
+} 
+
+button#deleteAll { 
+	color: #fff; 
+	border: none; 
+	padding: 10px 20px; 
+	cursor: pointer; 
+	margin-left: 10px; 
+	font-weight: 600;
+    font-family: Flamenco; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 #FFD700;
+    background-color: #000;
+} 
+
+button#deleteAll:hover { 
+    background-color: #FFD700; 
+    box-shadow: 0 0 5px 0 #FFD700;
+    color: #000;
+} 
+
+.bookmark-item { 
+	background-color: #000; 
+	padding: 10px; 
+	border: 1px solid #FFD700; 
+	border-radius: 5px; 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	margin-bottom: 10px; 
+    color: #fff;
+} 
+
+.bookmark-item a { 
+	text-decoration: none; 
+	color: #fff; 
+} 
+
+.bookmark-item a:hover { 
+	text-decoration: underline; 
+} 
+
+/* Style the "Delete" button */
+.delete { 
+	background-color: #000; /* Red color */
+	color: #fff; /* White text color */
+	border: none; 
+	padding: 5px 5px; 
+	border-radius: 5px; 
+	font-size: medium; 
+	cursor: pointer; 
+	margin-left: 5px; 
+    box-shadow: 0 0 5px 0 #FFD700;
+    background-color: #000;
+} 
+
+.delete:hover { 
+    box-shadow: 0 0 5px 0 #FFD700;
+    background-color: #FFD700;
+color: #000;
+} 
+
+.edit { 
+	background-color: #000; /* Red color */
+	color: #fff; /* White text color */
+	border: none; 
+	padding: 5px 15px; 
+	border-radius: 5px; 
+	font-size: medium; 
+	cursor: pointer; 
+    box-shadow: 0 0 5px 0 #FFD700;
+
+} 
+
+.edit:hover { 
+    box-shadow: 0 0 5px 0 #FFD700;
+    background-color: #FFD700;
+    color: #000;
+} 
+
+ul { 
+	list-style: none; 
+	padding: 0; 
+} 
+
+li { 
+	display: flex; 
+	justify-content: space-between; 
+	margin-bottom: 10px; 
+} 
+
+a { 
+	text-decoration: none; 
+	color: #333; 
+} 
+
+a:hover { 
+	text-decoration: underline; 
+	color: #FFD700; 
+} 
+
+@media (max-width: 768px) { 
+	main { 
+		padding: 10px; 
+	} 
+
+	.bookmark-form { 
+		flex-direction: column; 
+	} 
+
+	input[type="url"], 
+	button#addBookmark, 
+	button#deleteAll { 
+		margin-left: 0; 
+		margin-bottom: 10px; 
+	} 
+} 
+
+@media (max-width: 345px) { 
+	main { 
+		padding: 10px; 
+	} 
+
+	.bookmark-form { 
+		flex-direction: column; 
+	} 
+
+	input[type="url"], 
+	button#addBookmark, 
+	button#deleteAll { 
+		margin-left: 0; 
+	} 
+}
